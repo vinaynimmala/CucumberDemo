@@ -1,0 +1,619 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 375900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitializationscenario1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 157800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitialization()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify Login with Valid User",
+        "description": "",
+        "id": "verify-login-functionality;verify-login-with-valid-user",
+        "after": [
+          {
+            "result": {
+              "duration": 215300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalAfterTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 169901900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2584200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"vinay\" into username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vinay",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_into_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter \"12345\" into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 12
+                }
+              ],
+              "location": "Login.user_enter_into_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Login button",
+            "match": {
+              "location": "Login.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 348300,
+              "error_message": "java.lang.Exception: Element not found in line 25\r\n\tat steps.Login.user_is_navigated_to_home_page(Login.java:53)\r\n\tat ✽.Then User is navigated to home page(VerifyLogin.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User is navigated to home page",
+            "match": {
+              "location": "Login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@demo"
+          },
+          {
+            "line": 4,
+            "name": "@scenario1"
+          },
+          {
+            "line": 4,
+            "name": "@lgnmodule"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 541100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitialization()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login with In-Valid User",
+        "description": "",
+        "id": "verify-login-functionality;verify-login-with-in-valid-user",
+        "after": [
+          {
+            "result": {
+              "duration": 396000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalAfterTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 239300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 461600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter username into username field",
+            "match": {
+              "location": "Login.user_enter_username_into_username_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 279000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter password into password field",
+            "match": {
+              "location": "Login.user_enter_password_into_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Login button",
+            "match": {
+              "location": "Login.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User access is denied and a message is displayed",
+            "match": {
+              "location": "Login.user_access_is_denied_and_a_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@demo"
+          },
+          {
+            "line": 14,
+            "name": "@scenario2"
+          },
+          {
+            "line": 14,
+            "name": "@ordermodule"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login functionality",
+    "description": "",
+    "id": "verify-login-functionality",
+    "keyword": "Feature",
+    "uri": "VerifyLogin.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 346400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitialization()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify Login with Valid User",
+        "description": "",
+        "id": "verify-login-functionality-with-example;verify-login-with-valid-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 264500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalAfterTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 263000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 421900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"iteration1\" into username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "iteration1",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_into_username_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 467000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter \"1234\" into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 12
+                }
+              ],
+              "location": "Login.user_enter_into_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Login button",
+            "match": {
+              "location": "Login.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 597700,
+              "error_message": "java.lang.Exception: Element not found in line 25\r\n\tat steps.Login.user_is_navigated_to_home_page(Login.java:53)\r\n\tat ✽.Then User is navigated to home page(VerifyLoginWIthExamples.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User is navigated to home page",
+            "match": {
+              "location": "Login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@examples"
+          },
+          {
+            "line": 4,
+            "name": "@demo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 493000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitialization()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login with Valid User",
+        "description": "",
+        "id": "verify-login-functionality-with-example;verify-login-with-valid-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 265000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalAfterTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 749800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 472000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"iteration2\" into username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "iteration2",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_into_username_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 419400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter \"abcd\" into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd",
+                  "offset": 12
+                }
+              ],
+              "location": "Login.user_enter_into_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Login button",
+            "match": {
+              "location": "Login.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2039600,
+              "error_message": "java.lang.Exception: Element not found in line 25\r\n\tat steps.Login.user_is_navigated_to_home_page(Login.java:53)\r\n\tat ✽.Then User is navigated to home page(VerifyLoginWIthExamples.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User is navigated to home page",
+            "match": {
+              "location": "Login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@examples"
+          },
+          {
+            "line": 4,
+            "name": "@demo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 895300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalbeforeInitialization()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify Login with Valid User",
+        "description": "",
+        "id": "verify-login-functionality-with-example;verify-login-with-valid-user;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 410200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.globalAfterTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 248600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Login page",
+            "match": {
+              "location": "Login.user_is_on_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 408400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"iteration3\" into username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "iteration3",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.user_enters_into_username_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 276300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter \"5678\" into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5678",
+                  "offset": 12
+                }
+              ],
+              "location": "Login.user_enter_into_password_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Login button",
+            "match": {
+              "location": "Login.click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1152800,
+              "error_message": "java.lang.Exception: Element not found in line 25\r\n\tat steps.Login.user_is_navigated_to_home_page(Login.java:53)\r\n\tat ✽.Then User is navigated to home page(VerifyLoginWIthExamples.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User is navigated to home page",
+            "match": {
+              "location": "Login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@examples"
+          },
+          {
+            "line": 4,
+            "name": "@demo"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login functionality with example",
+    "description": "",
+    "id": "verify-login-functionality-with-example",
+    "keyword": "Feature",
+    "uri": "VerifyLoginWIthExamples.feature"
+  }
+]
